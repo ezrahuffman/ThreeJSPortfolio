@@ -20,51 +20,17 @@ export const navLinks = [
       href: '#contact',
     },
   ];
-  
-  export const clientReviews = [
-    {
-      id: 1,
-      name: 'Emily Johnson',
-      position: 'Marketing Director at GreenLeaf',
-      img: 'assets/review1.png',
-      review:
-        'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
-    },
-    {
-      id: 2,
-      name: 'Mark Rogers',
-      position: 'Founder of TechGear Shop',
-      img: 'assets/review2.png',
-      review:
-        'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
-    },
-    {
-      id: 3,
-      name: 'John Dohsas',
-      position: 'Project Manager at UrbanTech ',
-      img: 'assets/review3.png',
-      review:
-        'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
-    },
-    {
-      id: 4,
-      name: 'Ether Smith',
-      position: 'CEO of BrightStar Enterprises',
-      img: 'assets/review4.png',
-      review:
-        'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
-    },
-  ];
+
   
   export const myProjects = [
     {
-      title: 'Podcastr - AI Podcast Platform',
-      desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+      title: 'TSP Genetic Algorithm',
+      desc: 'This interactive dashboard allows you to solve arbitrary versions of the traveling salesman problem using a genetic algorithm.',
       subdesc:
-        'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-      href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+        'Built using React & TypeScript for the frontend with Python, AsyncIO, and FastAPI on the backend.',
+      href: 'https://geneticalgo.netlify.app/',
       texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo1.png',
+      logo: '/assets/dna-icon.png',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
