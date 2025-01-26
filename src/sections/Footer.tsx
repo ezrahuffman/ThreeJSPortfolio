@@ -8,9 +8,11 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-3">
-                <div className="social-icon">
-                    <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2"/>
-                </div>
+                <a href="https://github.com/ezrahuffman">
+                    <div className="social-icon">
+                        <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2"/>
+                    </div>
+                </a>
             </div>
             <p className="text-white-500 ">© 2025 Ezra. All rights reserved</p>
         </section>
