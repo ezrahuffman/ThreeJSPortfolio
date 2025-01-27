@@ -60,7 +60,6 @@ const About = ({}) => {
                         <img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">
-                                Something aobut coding be fun.
                             </p>
                         </div>
                     </div>
