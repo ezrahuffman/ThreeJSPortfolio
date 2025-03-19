@@ -30,7 +30,7 @@ const About = ({}) => {
                         <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
-                            <p className="grid-subtext">I focus on 3D applications using Unity, and ThreeJS. However, I am familiar with most components of the tech stack and I am currently pursuing a masters in high performance computing.</p>
+                            <p className="grid-subtext">I have experience with many tech stacks and applications. However, I am most comfortable with C++, Python, C#, and TypeScript. I am also currently pursuing a masters in computing systems.</p>
                         </div>
                     </div>
 
