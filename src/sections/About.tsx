@@ -1,5 +1,4 @@
 import Globe from "react-globe.gl";
-import Button from "../components/Button";
 import { useState } from "react";
 
 const About = ({}) => {
