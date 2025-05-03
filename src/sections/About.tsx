@@ -21,7 +21,7 @@ const About = ({}) => {
                     <div className="grid-container">
                         <img src="/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain"></img>
                         <p className="grid-headtext">Hi I'm Ezra</p>
-                        <p className="grid-subtext">With 3 years of experience I have honed my skills in fullstack development with a focus on 3D interactive applications, optimization, and reliability</p>
+                        <p className="grid-subtext">With 3 years of experience I have honed my skills in fullstack development having worked on server infrastructure, game programming, UI, and core financial systems.</p>
                     </div>
                     
                 </div>
@@ -30,7 +30,7 @@ const About = ({}) => {
                         <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
-                            <p className="grid-subtext">I have experience with many tech stacks and applications. However, I am most comfortable with C++, Python, C#, and TypeScript. I am also currently pursuing a masters in computing systems.</p>
+                            <p className="grid-subtext">I have experience with many tech stacks and applications. However, I am most comfortable with Python, C++, JavaScript/TypeScript, and C#. I am also currently pursuing a masters in computing systems while continueing to work full-time.</p>
                         </div>
                     </div>
 

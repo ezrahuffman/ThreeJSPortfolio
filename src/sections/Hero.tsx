@@ -25,7 +25,7 @@ const Hero = ({}) => {
                     High my name is Ezra.
                 </p>
                 <p className="hero_tag text-gray_gradient  z-10">
-                    Building applications and tools.
+                    Full-Stack Developer
                 </p>
             </div>
             <div className="w-full h-full absolute inset-0 z-0">
