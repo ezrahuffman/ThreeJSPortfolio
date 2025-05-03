@@ -22,6 +22,24 @@ export default {
           600: '#AFB0B6',
           500: '#62646C',
         },
+        // Proper way to define custom background and text colors
+        background: {
+          'default': '#FFFFFF',
+        },
+        text: {
+          'tertiary': '#FFFFFF',
+          'secondary': '#AFB0B6',  // Based on your JSX
+        },
+        // For border colors
+        border: {
+          'default': '#3A3A49',  // This is a guess based on your code, adjust as needed
+        },
+        icon: {
+          'default': '#62646C',  // Again, a guess based on context
+        },
+        neutral: {
+          '950': '#0A0A0B',  // Adding this as it appears in your JSX
+        },
       },
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",
@@ -29,4 +47,4 @@ export default {
     },
   },
   plugins: [],
-};
+}

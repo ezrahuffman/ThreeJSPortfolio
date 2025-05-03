@@ -1,3 +1,6 @@
+import Project from "../types/ProjectType";
+
+
 export const navLinks = [
     {
       id: 1,
@@ -14,15 +17,10 @@ export const navLinks = [
       name: 'Work',
       href: '#work',
     },
-    {
-      id: 4,
-      name: 'Contact',
-      href: '#contact',
-    },
   ];
 
   
-  export const myProjects = [
+  export const myProjects: Project[] = [
     {
       title: 'TSP Genetic Algorithm',
       desc: 'This interactive dashboard allows you to solve arbitrary versions of the traveling salesman problem using a genetic algorithm.',
@@ -31,6 +29,8 @@ export const navLinks = [
       href: 'https://geneticalgo.netlify.app/',
       texture: '/textures/project/project1.mp4',
       logo: '/assets/dna-icon.png',
+      img: "",
+      tools: ["Python", "TypeScript", "JavaScript", "TS", "JS", "Machine Learning", "ML", "FastAPI", "API", "NumPy"],
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
@@ -63,6 +63,8 @@ export const navLinks = [
       href: 'https://www.github.com/ezrahuffman/Gladiator',
       texture: '/textures/project/project2.mp4',
       logo: '/assets/crossed_swords.png',
+      img: "",
+      tools: ["C#", "C Sharp", "Unity", "CSharp", "Machine Learning", "ML"],
       logoStyle: {
         backgroundColor: '#13202F',
         border: '0.2px solid #17293E',
