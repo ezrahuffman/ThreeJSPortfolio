@@ -29,7 +29,7 @@ const About = ({}) => {
                         <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain"/>
                         <div>
                             <p className="grid-headtext">Tech Stack</p>
-                            <p className="grid-subtext">I have experience with many tech stacks and applications. However, I am most comfortable with Python, C++, JavaScript/TypeScript, and C#. I am also currently pursuing a masters in computing systems while continueing to work full-time.</p>
+                            <p className="grid-subtext">I have experience with many tech stacks and applications. However, I am most comfortable with Python, C++, JavaScript/TypeScript, and C#. I am also currently pursuing a masters in computing systems while continuing to work full-time.</p>
                         </div>
                     </div>
 
