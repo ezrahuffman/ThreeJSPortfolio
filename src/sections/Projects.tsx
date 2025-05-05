@@ -13,7 +13,7 @@ const Projects = () => {
     }
 
     return (
-        <div className="w-[1200px] bg-black-100 inline-flex flex-col justify-start items-start overflow-hidden">
+        <div className="w-[1200px] bg-black-100 inline-flex flex-col justify-start items-start overflow-hidden" id="projects">
         <div className="self-stretch p-16 bg-black-100 flex flex-col justify-start items-start gap-12">
           <div data-align="Start" data-has-subheading="false" className="flex flex-col justify-start items-start gap-2">
             <div className="self-stretch justify-start text-white text-3xl font-semibold font-['Inter'] leading-7">Projects</div>
