@@ -98,7 +98,7 @@ export const navLinks = [
     {
       id: 1,
       name: 'Jack Henry',
-      pos: 'Programmer Analyst II',
+      pos: 'Software Engineer',
       duration: 'June 2024 - Present',
       title: "",
       icon: '/assets/JackHenryLogo.jpg',
