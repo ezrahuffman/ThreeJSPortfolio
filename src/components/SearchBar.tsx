@@ -12,17 +12,26 @@ const SearchBar = ({ onSearch, placeholder = "Python", className = "" } : {onSea
   };
 
   return (
-    <div className={`w-60 px-4 py-3 bg-background-default rounded-full outline outline-1 outline-offset-[-0.50px] outline-border-default inline-flex justify-start items-center gap-2 overflow-hidden ${className}`}>
+    <div 
+      className={`w-full max-w-md px-4 py-3 rounded-full border inline-flex justify-start items-center gap-2 overflow-hidden ${className}`}
+      style={{
+        background: 'var(--bg-elevated)',
+        borderColor: 'var(--border-subtle)'
+      }}
+    >
       <input 
         type="text"
         value={searchValue}
         onChange={handleInputChange}
         placeholder={placeholder}
-        className="flex-1 justify-start text-text-secondary text-base font-normal font-['Inter'] leading-none bg-transparent outline-none"
+        className="flex-1 text-base font-normal bg-transparent outline-none placeholder:opacity-60"
+        style={{
+          color: 'var(--text-main)'
+        }}
       />
-      <div data-size="16" className="size-4 relative overflow-hidden">
-        <div className="size-3 left-[2px] top-[2px] absolute outline outline-[1.60px] outline-offset-[-0.80px] outline-icon-default" />
-      </div>
+      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: 'var(--text-soft)' }}>
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
     </div>
   );
 };

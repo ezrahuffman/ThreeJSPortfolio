@@ -9,8 +9,47 @@
 }
 
 body {
-  background: #010103;
   font-family: 'General Sans', sans-serif;
+}
+
+body.theme-dark {
+  --bg-page: #04040a;
+  --bg-elevated: #0f1018;
+  --bg-elevated-soft: #171826;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text-main: #f5f5fb;
+  --text-muted: #afb0c4;
+  --text-soft: #7f8194;
+  --accent-soft: #4a7fd9;
+  --accent-soft-alt: #9a6bff;
+  --chip-bg: rgba(250, 250, 255, 0.04);
+  --chip-border: rgba(250, 250, 255, 0.12);
+  --hero-grid-line: rgba(255, 255, 255, 0.06);
+  --hero-scroll-border: rgba(255, 255, 255, 0.22);
+  --hero-scroll-dot: rgba(255, 255, 255, 0.6);
+  background: radial-gradient(circle at top left, #181b32 0, #04040a 45%, #010103 100%);
+  color: var(--text-main);
+}
+
+body.theme-light {
+  --bg-page: #faf8f5;
+  --bg-elevated: #ffffff;
+  --bg-elevated-soft: #f5f3ef;
+  --border-subtle: rgba(26, 24, 20, 0.08);
+  --border-strong: rgba(26, 24, 20, 0.18);
+  --text-main: #1a1814;
+  --text-muted: #5a5650;
+  --text-soft: #7a7670;
+  --accent-soft: #c9a961;
+  --accent-soft-alt: #8b7355;
+  --chip-bg: rgba(201, 169, 97, 0.06);
+  --chip-border: rgba(201, 169, 97, 0.2);
+  --hero-grid-line: rgba(26, 24, 20, 0.05);
+  --hero-scroll-border: rgba(201, 169, 97, 0.4);
+  --hero-scroll-dot: rgba(201, 169, 97, 0.8);
+  background: radial-gradient(circle at top left, #ffffff 0, #faf8f5 50%, #f5f1ea 100%);
+  color: var(--text-main);
 }
 
 @layer utilities {
@@ -27,15 +66,21 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply font-generalsans max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5 transition-colors;
+    color: var(--text-soft);
+  }
+
+  .nav-li:hover {
+    color: var(--text-main);
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-lg md:text-base transition-colors;
   }
 
   .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply absolute left-0 right-0 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    background: color-mix(in srgb, var(--bg-elevated-soft) 80%, transparent);
   }
 
   .text-gray_gradient {
@@ -44,7 +89,10 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md transition-all active:scale-95 mx-auto border;
+    background: radial-gradient(circle at top left, var(--accent-soft) 0, var(--accent-soft-alt) 45%, var(--bg-elevated-soft) 100%);
+    border-color: var(--border-strong);
+    color: var(--text-main);
   }
 
   .btn-ping {
@@ -62,15 +110,19 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full border rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    background: radial-gradient(circle at top left, var(--bg-elevated) 0, var(--bg-elevated-soft) 40%, var(--bg-page) 140%);
+    border-color: var(--border-subtle);
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-xl font-semibold mb-2 font-generalsans;
+    color: var(--text-main);
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-base font-generalsans;
+    color: var(--text-muted);
   }
 
   .copy-container {
@@ -92,7 +144,8 @@ body {
   }
 
   .client-review {
-    @apply rounded-lg md:p-10 p-5 col-span-1 bg-black-300 bg-opacity-50;
+    @apply rounded-lg md:p-10 p-5 col-span-1;
+    background: radial-gradient(circle at top left, var(--bg-elevated) 0, var(--bg-elevated-soft) 55%, var(--bg-page) 130%);
   }
 
   .client-content {
@@ -105,19 +158,24 @@ body {
   }
 
   .work-content {
-    @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-1 rounded-lg border;
+    background: radial-gradient(circle at top left, var(--bg-elevated) 0, var(--bg-elevated-soft) 50%, var(--bg-page) 140%);
+    border-color: var(--border-subtle);
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer rounded-lg sm:px-5 px-2.5;
+    background: transparent;
   }
 
   .work-content_logo {
-    @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
+    @apply rounded-3xl w-16 h-16 p-2;
+    background: color-mix(in srgb, var(--bg-elevated) 80%, var(--accent-soft-alt) 20%);
   }
 
   .work-content_bar {
-    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
+    @apply flex-1 w-0.5 mt-4 h-full group-last:hidden;
+    background: linear-gradient(to bottom, var(--accent-soft-alt), var(--accent-soft));
   }
 
   /* contact section */
@@ -126,15 +184,25 @@ body {
   }
 
   .field-label {
-    @apply text-lg text-white-600;
+    @apply text-lg;
+    color: var(--text-soft);
   }
 
   .field-input {
-    @apply w-full bg-black-300 px-5 py-2 min-h-14 rounded-lg placeholder:text-white-500 text-lg text-white-800 shadow-black-200 shadow-2xl focus:outline-none;
+    @apply w-full px-5 py-2 min-h-14 rounded-lg text-lg shadow-black-200 shadow-2xl focus:outline-none border;
+    background: var(--bg-elevated);
+    border-color: var(--border-subtle);
+    color: var(--text-main);
+    &::placeholder {
+      color: var(--text-soft);
+    }
   }
 
   .field-btn {
-    @apply bg-black-500 px-5 py-2 min-h-12 rounded-lg shadow-black-200 shadow-2xl flex justify-center items-center text-lg text-white gap-3;
+    @apply px-5 py-2 min-h-12 rounded-lg shadow-black-200 shadow-2xl flex justify-center items-center text-lg gap-3 border;
+    background: linear-gradient(135deg, var(--accent-soft) 0, var(--accent-soft-alt) 60%, var(--bg-elevated-soft) 100%);
+    border-color: var(--border-strong);
+    color: var(--text-main);
   }
 
   .field-btn_arrow {
@@ -143,7 +211,9 @@ body {
 
   /*  footer */
   .social-icon {
-    @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
+    @apply w-12 h-12 rounded-full flex justify-center items-center border transition-colors;
+    background: var(--bg-elevated);
+    border-color: var(--border-subtle);
   }
 }
 

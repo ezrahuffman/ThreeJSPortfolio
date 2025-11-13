@@ -14,58 +14,65 @@ const About = ({}) => {
 
     return (
         <section className="c-space my-20" id="about">
-            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
-                <div className="col-span-1 xl:row-span-3">
-                    <div className="grid-container">
-                        <img src="/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain"></img>
-                        <p className="grid-headtext">Hi I'm Ezra</p>
-                        <p className="grid-subtext">With 3 years of experience I have honed my skills in fullstack development having worked on server infrastructure, game programming, UI, and core financial systems.</p>
-                    </div>
-                    
-                </div>
-                <div className="col-span-1 xl:row-span-3">
-                    <div className="grid-container">
-                        <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain"/>
-                        <div>
-                            <p className="grid-headtext">Tech Stack</p>
-                            <p className="grid-subtext">I have experience with many tech stacks and applications. However, I am most comfortable with Python, C++, JavaScript/TypeScript, and C#. I am also currently pursuing a masters in computing systems while continuing to work full-time.</p>
+            <div className="mb-12 text-center">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: 'var(--text-main)' }}>About Me</h2>
+                <div className="w-20 h-1 mx-auto rounded-full" style={{ background: 'linear-gradient(90deg, var(--accent-soft) 0%, var(--accent-soft-alt) 100%)' }}></div>
+            </div>
+            
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 h-full">
+                {/* Introduction Card */}
+                <div className="lg:col-span-2 md:col-span-2">
+                    <div className="grid-container h-full">
+                        <div className="flex flex-col md:flex-row gap-6 items-start">
+                            <img src="/assets/grid1.png" alt="profile" className="w-full md:w-48 h-48 object-contain rounded-lg"/>
+                            <div className="flex-1">
+                                <p className="grid-headtext text-2xl mb-3">Hi, I'm Ezra</p>
+                                <p className="grid-subtext text-lg leading-relaxed">With 3 years of experience, I have honed my skills in fullstack development, having worked on server infrastructure, game programming, UI, and core financial systems. I am passionate about creating efficient, scalable solutions that solve real-world problems.</p>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                </div>
-                <div className="col-span-1 xl:row-span-3">
-                    <div className="grid-container">
-                        <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center bg-gradient-to-br from-indigo-900/20 to-purple-900/20">
-                            <div className="text-center space-y-4 p-8">
-                                <svg className="w-24 h-24 mx-auto text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div>
-                            <p className="grid-headtext">Remote & Flexible</p>
-                            <p className="grid-subtext">Based in US. Available for remote work across most time zones. Open to full-time, part-time, and contract roles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="xl:col-span-2 xl:row-span-2">
-                    <div className="grid-container">
-                        <img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain"/>
-                        <div>
-                            <p className="grid-headtext">
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="xl:col-span-1 xl:row-span-2">
-                    <div className="grid-container">
-                        <img src="/assets/grid4.png" alt="grid-4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"/>
-                        <div className="space-y-2">
-                            <p className="grid-subtext text-center">Contact Me</p>
+                {/* Contact Card */}
+                <div className="lg:col-span-1 md:col-span-2">
+                    <div className="grid-container h-full flex flex-col justify-center">
+                        <img src="/assets/grid4.png" alt="contact" className="w-full h-32 object-cover rounded-lg mb-4"/>
+                        <div className="space-y-3 text-center">
+                            <p className="grid-headtext">Get In Touch</p>
                             <div className="copy-container" onClick={handleCopy}>
-                                <img src={hasCopied?'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">ezrathuffman@gmail.com</p>
+                                <img src={hasCopied?'assets/tick.svg' : 'assets/copy.svg'} alt="copy" className="w-5 h-5"/>
+                                <p className="text-base md:text-lg font-medium" style={{ color: 'var(--accent-soft)' }}>ezrathuffman@gmail.com</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Tech Stack Card */}
+                <div className="lg:col-span-2 md:col-span-1">
+                    <div className="grid-container h-full">
+                        <div className="flex flex-col sm:flex-row gap-6 items-start">
+                            <img src="/assets/grid2.png" alt="tech stack" className="w-full sm:w-48 h-48 object-contain"/>
+                            <div className="flex-1">
+                                <p className="grid-headtext text-2xl mb-3">Tech Stack</p>
+                                <p className="grid-subtext text-base leading-relaxed">I have experience with many tech stacks and applications. Most comfortable with Python, C++, JavaScript/TypeScript, and C#. Currently pursuing a master's in computing systems while working full-time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Remote Work Card */}
+                <div className="lg:col-span-1 md:col-span-1">
+                    <div className="grid-container h-full">
+                        <div className="rounded-2xl w-full h-32 flex justify-center items-center mb-4" style={{
+                            background: 'linear-gradient(135deg, var(--accent-soft)/10 0%, var(--accent-soft-alt)/10 100%)'
+                        }}>
+                            <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{ color: 'var(--accent-soft)' }}>
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div className="text-center">
+                            <p className="grid-headtext mb-2">Remote & Flexible</p>
+                            <p className="grid-subtext text-sm">Based in US. Available for remote work across time zones. Open to full-time, part-time, and contract roles.</p>
                         </div>
                     </div>
                 </div>
