@@ -1,4 +1,3 @@
-import Globe from "react-globe.gl";
 import { useState } from "react";
 
 const About = ({}) => {
@@ -36,20 +35,16 @@ const About = ({}) => {
                 </div>
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
-                        <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-                            <Globe
-                            height={326}
-                            width={326}
-                            backgroundColor="rgba(0,0,0,0)"
-                            showAtmosphere
-                            showGraticules
-                            globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                            bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                            />
+                        <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center bg-gradient-to-br from-indigo-900/20 to-purple-900/20">
+                            <div className="text-center space-y-4 p-8">
+                                <svg className="w-24 h-24 mx-auto text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
                         </div>
                         <div>
-                            <p className="grid-headtext">I work remotely across most time zones</p>
-                            <p className="grid-subtext">Based in US. Open to full-time, part-time, and contract roles.</p>
+                            <p className="grid-headtext">Remote & Flexible</p>
+                            <p className="grid-subtext">Based in US. Available for remote work across most time zones. Open to full-time, part-time, and contract roles.</p>
                         </div>
                     </div>
                 </div>
