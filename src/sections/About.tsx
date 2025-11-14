@@ -27,7 +27,7 @@ const About = ({}) => {
                             <img src="/assets/linkedin.jpg" alt="profile" className="w-full md:w-48 h-48 object-contain rounded-lg"/>
                             <div className="flex-1">
                                 <p className="grid-headtext text-2xl mb-3">Hi, I'm Ezra</p>
-                                <p className="grid-subtext text-lg leading-relaxed">With 3 years of experience, I have honed my skills in fullstack development, having worked on server infrastructure, game programming, UI, and core financial systems. I am passionate about creating efficient, scalable solutions that solve real-world problems.</p>
+                                <p className="grid-subtext text-lg leading-relaxed">With over three years of experience, I have worked in multiple domains, having worked on server infrastructure, game programming, UI, and core financial systems. I am passionate about working on difficult engineering problems. I am currently interested in fullstack, simulation, HFT, and computing systems. If you are working on something else interesting, feel free to reach out, I try not to constrain myself to one domain.</p>
                             </div>
                         </div>
                     </div>

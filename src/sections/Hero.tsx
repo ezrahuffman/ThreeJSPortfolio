@@ -34,7 +34,7 @@ const Hero = () => {
                             border: '1px solid var(--chip-border)',
                             color: 'var(--text-soft)'
                         }}>
-                            HFT & Quantitative Finance
+                            Full-Stack Development
                         </span>
                         <span className="px-4 py-2 rounded-full text-sm" style={{
                             background: 'var(--chip-bg)',
@@ -48,7 +48,7 @@ const Hero = () => {
                             border: '1px solid var(--chip-border)',
                             color: 'var(--text-soft)'
                         }}>
-                            Full-Stack Development
+                            Computing Systems
                         </span>
                     </div>
                 </div>
