@@ -215,6 +215,14 @@ body.theme-light {
     background: var(--bg-elevated);
     border-color: var(--border-subtle);
   }
+
+  .github-logo {
+    transition: filter 0.3s ease;
+  }
+
+  body.theme-light .github-logo {
+    filter: invert(1);
+  }
 }
 
 .waving-hand {

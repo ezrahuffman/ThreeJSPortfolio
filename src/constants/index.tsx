@@ -70,17 +70,17 @@ export const navLinks = [
       tools: ["Python", "HTML", "Markdown", "md", "encoding", "generator"],
       shownTools: ["Python", "HTML", "Markdown"],
     },
-    {
-      title: 'FinSight',
-      desc: 'Investments research platform being developed with another developer',
-      subdesc:
-        'This is an Investment research platform that I have been developing alongside one other developer using React, TypeScript, Python (FastAPI/AsyncIO), and SQL',
-      href: 'https://github.com/jonahansmulcrone/FinSight',
-      texture: '/textures/project/project2.mp4',
-      img: "",
-      tools: ["Python", "HTML", "CSS", "React", "TypeScript", "FastAPI", "SQL", "API", "javascript", "ts", "js"],
-      shownTools: ["Python", "HTML", "CSS", "TypeScript", "SQL"],
-    },
+    // {
+    //   title: 'FinSight',
+    //   desc: 'Investments research platform being developed with another developer',
+    //   subdesc:
+    //     'This is an Investment research platform that I have been developing alongside one other developer using React, TypeScript, Python (FastAPI/AsyncIO), and SQL',
+    //   href: 'https://github.com/jonahansmulcrone/FinSight',
+    //   texture: '/textures/project/project2.mp4',
+    //   img: "",
+    //   tools: ["Python", "HTML", "CSS", "React", "TypeScript", "FastAPI", "SQL", "API", "javascript", "ts", "js"],
+    //   shownTools: ["Python", "HTML", "CSS", "TypeScript", "SQL"],
+    // },
   ];
   
   export const calculateSizes = (isSmall:boolean, isMobile:boolean, isTablet:boolean) => {
