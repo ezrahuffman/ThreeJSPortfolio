@@ -24,7 +24,7 @@ const About = ({}) => {
                 <div className="lg:col-span-2 md:col-span-2">
                     <div className="grid-container h-full">
                         <div className="flex flex-col md:flex-row gap-6 items-start">
-                            <img src="/assets/grid1.png" alt="profile" className="w-full md:w-48 h-48 object-contain rounded-lg"/>
+                            <img src="/assets/linkedin.jpg" alt="profile" className="w-full md:w-48 h-48 object-contain rounded-lg"/>
                             <div className="flex-1">
                                 <p className="grid-headtext text-2xl mb-3">Hi, I'm Ezra</p>
                                 <p className="grid-subtext text-lg leading-relaxed">With 3 years of experience, I have honed my skills in fullstack development, having worked on server infrastructure, game programming, UI, and core financial systems. I am passionate about creating efficient, scalable solutions that solve real-world problems.</p>
@@ -54,7 +54,7 @@ const About = ({}) => {
                             <img src="/assets/grid2.png" alt="tech stack" className="w-full sm:w-48 h-48 object-contain"/>
                             <div className="flex-1">
                                 <p className="grid-headtext text-2xl mb-3">Tech Stack</p>
-                                <p className="grid-subtext text-base leading-relaxed">I have experience with many tech stacks and applications. Most comfortable with Python, C++, JavaScript/TypeScript, and C#. Currently pursuing a master's in computing systems while working full-time.</p>
+                                <p className="grid-subtext text-base leading-relaxed">I have experience with many tech stacks and applications. I'm most comfortable with Python, C++, JavaScript/TypeScript, and C#. I am also currently pursuing a master's in computing systems at Georgia Institute of Technology.</p>
                             </div>
                         </div>
                     </div>
@@ -71,8 +71,8 @@ const About = ({}) => {
                             </svg>
                         </div>
                         <div className="text-center">
-                            <p className="grid-headtext mb-2">Remote & Flexible</p>
-                            <p className="grid-subtext text-sm">Based in US. Available for remote work across time zones. Open to full-time, part-time, and contract roles.</p>
+                            <p className="grid-headtext mb-2">Seattle & Remote</p>
+                            <p className="grid-subtext text-sm">Based in Seatle, WA. Available for in-person in the Seattle area or remote work across the US. Open to full-time roles.</p>
                         </div>
                     </div>
                 </div>

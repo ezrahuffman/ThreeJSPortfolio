@@ -45,8 +45,8 @@ export const navLinks = [
       href: 'https://www.github.com/ezrahuffman/Gladiator',
       texture: '/textures/project/project2.mp4',
       img: "",
-      tools: ["C#", "C Sharp", "Unity", "CSharp", "Machine Learning", "ML"],
-      shownTools: ["C#","Unity", "Machine Learning"],
+      tools: ["C#", "C Sharp", "Unity", "CSharp", "Machine Learning", "ML", "Game Development"],
+      shownTools: ["C#","Unity", "Machine Learning", "Game Development"],
     },
     {
       title: 'Card Game',
@@ -56,8 +56,8 @@ export const navLinks = [
       href: 'https://github.com/ezrahuffman/CardGame_Demo',
       texture: '/textures/project/project2.mp4',
       img: "",
-      tools: ["C#", "C Sharp", "Unity", "CSharp", "Networking", "Online", "Multiplayer", "multi-player"],
-      shownTools: ["C#","Unity", "Networking"],
+      tools: ["C#", "C Sharp", "Unity", "CSharp", "Networking", "Online", "Multiplayer", "multi-player", "Game Development"],
+      shownTools: ["C#","Unity", "Networking", "Game Development"],
     },
     {
       title: 'Static Site Generator',
